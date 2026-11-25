@@ -1,0 +1,35 @@
+# Python cache and compiled files
+__pycache__/
+*.py[cod]
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Runtime forensic data
+data/audit_ledger.jsonl
+data/evidence_vault/*
+data/parquet_store/*
+data/certificates/*
+
+# Generated benchmark data
+benchmarks/bench_data/*
+
+# Operating system and editor files
+.DS_Store
+.vscode/
+
+# Trusted checkpoint runtime data (keys and sealed checkpoints)
+data/trusted_checkpoints/
+data/trusted_keys/
+
+# Executable scenario demo artifacts
+data/demo/
